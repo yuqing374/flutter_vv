@@ -2,38 +2,53 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<!-- 应用程序开发区域设置 -->
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<!-- 应用程序显示名称 -->
 	<key>CFBundleDisplayName</key>
 	<string>Flutter Vv</string>
+	<!-- 可执行文件名称 -->
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<!-- 应用程序包标识符 -->
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<!-- 信息字典版本 -->
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
+	<!-- 应用程序名称 -->
 	<key>CFBundleName</key>
 	<string>flutter_vv</string>
+	<!-- 应用程序包类型 -->
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
+	<!-- 应用程序版本号 -->
 	<key>CFBundleShortVersionString</key>
 	<string>$(FLUTTER_BUILD_NAME)</string>
+	<!-- 应用程序签名 -->
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<!-- 构建版本号 -->
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<!-- 要求 iOS 设备 -->
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<!-- 启动屏幕故事板名称 -->
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
+	<!-- 主故事板文件 -->
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<!-- 支持的 iPhone 界面方向 -->
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<!-- 支持的 iPad 界面方向 -->
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -41,8 +56,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<!-- 禁用 iPhone 上的最小帧持续时间 -->
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
+	<!-- 支持间接输入事件 -->
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 </dict>

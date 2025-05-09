@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.5.0
+  sdk: ">=2.12.0 <4.0.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -34,7 +34,68 @@ dependencies:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.8
+  cupertino_icons: 1.0.8
+
+  # 文字大小自适应
+  auto_size_text: 3.0.0
+  #权限管理插件
+  permission_handler: 11.3.1
+  # Dart常用工具类库
+  common_utils: 2.1.0
+  # 启动url
+  url_launcher: 6.2.6
+  # 切换输入Textfield
+  keyboard_actions: 4.2.0
+  # 日期格式转换
+  date_format: 2.0.7
+  # 图片选择器
+  image_picker: 1.1.1
+  # 缓存图片
+  cached_network_image: 3.3.1
+  # 震动
+  flutter_vibrate: 1.3.0
+  # loading 管理
+  flutter_easyloading: 3.0.5
+  # PDF
+  flutter_pdfview: 1.3.2
+  # 数据总线
+  event_bus: 2.0.0
+  # google地图
+  google_maps_flutter: 2.6.0
+  # 定位
+  geolocator: 11.0.0
+  # 下拉刷新，上拉加载更多
+  pull_to_refresh_flutter3: 2.0.2
+  easy_refresh: 3.4.0
+  # Firebase
+  firebase_analytics: 10.10.4
+  firebase_messaging: 14.9.1
+  firebase_dynamic_links: 5.4.19
+  # firebase crash 捕获
+  firebase_core: 2.30.1
+  firebase_crashlytics: 3.5.4
+  firebase_app_installations: 0.2.4+19
+  flutter_local_notifications: 17.2.2
+  # 圆形图片裁剪
+  image_cropper: 5.0.1
+  # 抖动动画
+  shake_animation_widget: 3.0.4
+  # 图片压缩
+  flutter_native_image: 0.0.6+1
+  get: 4.6.6
+  #  barcode 扫描
+  qr_code_scanner: 1.0.1
+  # 显示评论弹出窗口
+  in_app_review: 2.0.9
+  # 拍照自定义相机UI
+  camera: 0.10.5+9
+  flutter_image_compress: 2.2.0
+  # 自动识别带链接的文本
+  flutter_linkify: 6.0.0
+  # flutter升级3.24.0冲突
+  archive: 3.6.1
+  analyzer: 6.4.1
+
 
 dev_dependencies:
   flutter_test:

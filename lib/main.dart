@@ -5,29 +5,28 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
+  // 这个 widget 是应用程序的根组件
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
+        // 这是应用程序的主题设置
         //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
+        // 尝试：运行应用程序 "flutter run"。你会看到
+        // 应用程序有一个紫色的工具栏。然后，在不退出应用的情况下，
+        // 尝试将下面的 colorScheme 中的 seedColor 改为 Colors.green
+        // 然后触发 "热重载"（保存更改或按 Flutter IDE 中的 "热重载" 按钮，
+        // 或者如果使用命令行启动应用，按 "r" 键）。
         //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
+        // 注意计数器没有重置为零；应用程序
+        // 状态在重载过程中不会丢失。要重置状态，请使用热
+        // 重启。
         //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
+        // 这也适用于代码，不仅仅是值：大多数代码更改都可以
+        // 通过热重载来测试。
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
@@ -37,16 +36,15 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  const MyHomePage({Key? key, required this.title}) : super(key: key);
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
+  // 这个 widget 是应用程序的主页面。它是一个有状态的 widget，
+  // 意味着它有一个 State 对象（在下面定义），其中包含影响
+  // 其外观的字段。
 
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
+  // 这个类是状态的配置。它保存由父组件（在这个例子中是 App widget）
+  // 提供的值（在这个例子中是标题），并被 State 的 build 方法使用。
+  // Widget 子类中的字段总是被标记为 "final"。
 
   final String title;
 
@@ -59,50 +57,49 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _incrementCounter() {
     setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
+      // 这个 setState 调用告诉 Flutter 框架这个 State 中
+      // 有东西发生了变化，这会导致它重新运行下面的 build 方法，
+      // 以便显示可以反映更新后的值。如果我们改变
+      // _counter 而不调用 setState()，那么 build 方法就不会
+      // 被再次调用，因此看起来什么都不会发生。
       _counter++;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
+    // 这个方法在每次调用 setState 时都会重新运行，例如上面的
+    // _incrementCounter 方法所做的。
     //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
+    // Flutter 框架已经过优化，使重新运行 build 方法
+    // 变得快速，这样你就可以只重建需要更新的部分，而不是
+    // 必须单独更改 widget 的实例。
     return Scaffold(
       appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
+        // 尝试：尝试将这里的颜色改为特定颜色（比如
+        // Colors.amber），然后触发热重载，看看 AppBar
+        // 改变颜色，而其他颜色保持不变。
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
+        // 这里我们从由 App.build 方法创建的 MyHomePage 对象中
+        // 获取值，并用它来设置我们的应用栏标题。
         title: Text(widget.title),
       ),
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
+        // Center 是一个布局 widget。它接收一个子组件并将其
+        // 放置在父组件的中间。
         child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
+          // Column 也是一个布局 widget。它接收一个子组件列表并
+          // 垂直排列它们。默认情况下，它会调整自己的大小以适应
+          // 子组件的水平尺寸，并尝试与父组件一样高。
           //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
+          // Column 有各种属性来控制它如何调整自己的大小和
+          // 如何定位其子组件。这里我们使用 mainAxisAlignment 来
+          // 垂直居中子组件；这里的主轴是垂直轴，因为
+          // Column 是垂直的（交叉轴将是水平的）。
           //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
+          // 尝试：调用 "debug painting"（在 IDE 中选择 "Toggle Debug Paint"
+          // 操作，或在控制台中按 "p"），以查看
+          // 每个 widget 的线框。
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
@@ -119,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ), // 这个尾随逗号使 build 方法的自动格式化更美观。
     );
   }
 }
